@@ -1,0 +1,79 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		FRA={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "La Resistance" } 
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_invite_communist_ministers
+				FRA_utilize_the_leagues
+				FRA_je_suis_la_deluge
+			}
+		}
+
+		ENG={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+
+		GER = {
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				GER_mefo_bills_1936_fake_ns
+				GER_army_1936_fake_ns
+				GER_airforce_fake_ns
+			}
+			focuses = {
+				GER_fuhrerprinzip
+				GER_the_peoples_victory
+				GER_glory_to_the_imperial_army
+			}
+		}
+
+		WRU={
+			history = "WRU_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+
+		SOV={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { has_dlc = "No Step Back" }
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+				SOV_behead_the_snake
+				SOV_the_supreme_soviet
+				SOV_reconvene_the_zemsky_sobor
+			}	
+		}
+		# minors from DLC ####
+		UKR={
+			minor = yes
+			history = "UKR_GATHERING_STORM_DESC"
+			ideology = democratic
+			
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -7,5 +7,6 @@ tags={
 	"Balance"
 	"Map"
 }
+replace_path="common/characters"
 name="Kämpfe für Europa"
 supported_version="1.15.3"
